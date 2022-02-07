@@ -9,5 +9,7 @@ class BirdForm(ModelForm):
 
 
 BirdFormSet = modelformset_factory(
-    Bird, fields=('common_name', 'scientific_name'), extra=1
+    Bird,
+    fields=('common_name', 'scientific_name'),
+    extra=1
 )
